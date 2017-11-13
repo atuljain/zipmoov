@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+</head>
+
+  <body>
+  {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        {% endfor %}
+        {% endif %}
+    </ul> 
+  <nav class="navbar-inverse">
+  <div class="topheader">
+       <div class="topheaderleft">
+
+        <div class="top-logo">
+
+       <div class="indexlogo-box ">
+                <div class="row">
+                  <img src="{% static "img/l4.png" %}" style="margin-left:70px;margin-top: 13px;">
+                    </div>
+
+        </div>
+        <div class="top-menu" style="margin-left:116px;" id="myNavbar">
+            <ul>
+              <li><a href="ride.html">Bitmuv</a></li>
+              <li><a href="drive.html">Muver</a></li>
+              <li><a href="">Cities</a></li>
+            </ul>
+        </div>
+
+        </div>
+        <div class="topheaderright">
+             <div class="top-menu myNavbar" id="myNavbar">
+            <ul>
+              <li><a href="">Help </a></li>
+              <li><a href="logout">logout</a></li>
+              <!-- <li><a href="">Map</a></li> -->
+            </ul>
+            <div id="menu-wrapper">
+             <div id="hamburger-menu"><span></span><span></span><span></span></div>
+      <!-- hamburger-menu -->
+           </div>
+        </div>
+        </div>
+  </div>
+</div>
+</nav>
+  <!--Navigation bar-->
+    <!---->
+    <div class="container" >
+          <div class="wrap-content" >
+            <!-- start: FEATURED BOX LINKS -->
+                <div id="body_data_dxmanss">
+                          {% block contents %}
+                          {% endblock %}
+                </div>
+            <!-- end: FEATURED BOX LINKS -->
+          </div>
+        </div>
+
+    <!-- footer-->
+     <section id="footersection" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+           </div>
+          <div class="col-md-12">
+             <div class="row">
+            <hr style="border-top: 1px solid rgba(124, 126, 125, 0.52)">
+          </div>
+          </div>
+         <div class="col-md-12">
+              <div class="row linkshow">
+                 <div class="col-md-4 ">
+                 <div clss="foot-menu">
+                 <ul>
+                    <li><img src="{% static "img/mp1.jpg" %}"> <a href="#">Enter Your Location</a></li>
+                    <li><img src="{% static "img/mp2.jpg" %}"> <a href="#">English</a></li>
+                    <li><img src="{% static "img/mp3.jpg" %}"> <a href="#">Help</a></li>
+                 </ul>
+                 <p style="padding: 10px;margin-top: 230px;margin-left: 30px; ">
+                    <a href="" style="padding: 3px "> <img src="{% static "img/f1.jpg" %}""></a>
+                    <a href="" style="padding: 3px "><img src="{% static "img/t1.jpg" %}"></a>
+                    <a href="" style="padding: 3px "><img src="{% static "img/i.jpg" %}"></a>
+                    <a href="" style="padding: 3px "><img src="{% static "img/c.jpg" %}"></a>
+                 </p>
+                 </div>
+                  </div>
+                  <div class="col-md-4">
+                  <ul>
+                  <li><a href="#">Ride</a></li>
+                  <li><a href="#">Drive</a></li>
+                  <li><a href="#">Cities</a></li>
+                  <li><a href="#">Fare Estimate</a></li>
+                  <li><a href="#">Deliver</a></li>
+                  <li><a href="#">Food</a></li>
+                  <li><a href="#">Business Travel</a></li>
+                  <li><a href="#">How it Works</a></li>
+                  <li><a href="#">Airports</a></li>
+                  <li><a href="#">Countries</a></li>
+                  </ul>
+                  </div>
+                  <div class="col-md-4">
+                  <ul>
+                  <li><a href="#">Safety</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Helping Cities</a></li>
+                  <li><a href="#">Our Story</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Newsroom</a></li>
+                  <li><a href="#">Media</a></li>
+                  <li><a href="#">Uber API</a></li>
+                  <li><a href="#">Gift Cards</a></li>
+                  <li><a href="#">Driving job</a></li>
+                  <ul>
+             </div>
+           </div>
+
+              <div class="col-md-12">
+                 <div class="row">
+                    <hr style="border-top: 1px solid rgba(124, 126, 125, 0.52)">
+              </div>
+             </div>
+             <div class="col-md-12">
+                 <div class="row linkshow">
+                    <div class="col-md-4">
+
+                    <ul>
+                      <li><a href="#">Top Cities</a></li>
+                      <li><a href="#">Top Countries</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-8">
+                 <p>
+                     <a href="#">San Francisco</a>
+                     <a href="#">London</a>
+                      <a href="#">Los Angeles</a>
+                      <a href="#">Washington D.C</a>
+                      <a href="#">Mexico City</a>
+                      <a href="#">Sao Paulo</a>
+                      <a href="#">USA</a>
+                      <a href="#">France</a>
+                      <a href="#">India</a>
+                      <a href="#">Spain</a>
+                      <a href="#">Mexico</a>
+                      <a href="#">Russia</a>
+
+                   </p>
+                    </div>
+              </div>
+             </div>
+             <div class="col-md-12">
+                 <div class="row">
+                    <hr style="border-top: 1px solid rgba(124, 126, 125, 0.52)">
+              </div>
+             </div>
+             <div class="col-md-12">
+                 <div class="row">
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-8">
+                    <p><a href=""><img src="{% static "img/play.svg" %}" style="width: 20%;
+    height: 11%;"></a>
+                   <a href=""> <img src="{% static "img/google.png" %}" style="width: 20%;
+    height: 11%;"><a href="">
+   <a href=""> <img src="{% static "img/micro.png" %}" style="width: 20%;
+    height: 11%;"></a>
+
+                  </p>
+                    </div>
+              </div>
+             </div>
+             <div class="col-md-12">
+                 <div class="row">
+                    <hr style="border-top: 1px solid rgba(124, 126, 125, 0.52)">
+              </div>
+             </div>
+             <div class="col-md-12">
+                 <div class="row">
+                    <div class="row linkshow">
+                    <div class="col-md-4">
+                    <ul>
+                      <li><a href="#">&copy;2017 Bitmuv Technologies Inc.</a></li>
+                     </ul>
+                    </div>
+                    <div class="col-md-4">
+                    <ul>
+                      <li><a href="#">Privacy</a></li>
+                      <li><a href="#">Accessibility</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4">
+                    <ul>
+                    <li><a href="#">Terms</a></li>
+                     </ul>
+                    </div>
+              </div>
+             </div>
+        </div>
+      </div>
+    </section>
+    <!--footer-->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script>
+     function changeType() {
+            if($("#registrationType").val()=='mover'){
+                document.getElementById("ragistrationform").action = "/mover/registration";
+            }
+            else{
+                document.getElementById("ragistrationform").action = "/customer/registration";
+            }   
+        }
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:15,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script type="text/javascript">
+  $(function() {
+  function slideMenu() {
+    var activeState = $("#menu-container .menu-list").hasClass("active");
+    $("#menu-container .menu-list").animate(
+      {
+        left: activeState ? "67%" : "67%"
+
+      },
+      600
+    );
+  }
+  $("#menu-wrapper").click(function(event) {
+    event.stopPropagation();
+   $("#hamburger-menu").toggleClass("open");
+    $("#menu-container .menu-list").slideToggle("slow");
+    slideMenu();
+
+    $("body").toggleClass("overflow-hidden");
+  });
+
+  $(".menu-list").find(".accordion-toggle").click(function() {
+    $(this).next().toggleClass("open").slideToggle("fast");
+    $(this).toggleClass("active-tab").find(".menu-link").toggleClass("active");
+
+    $(".menu-list .accordion-content")
+      .not($(this).next())
+      .slideUp("fast")
+      .removeClass("open");
+    $(".menu-list .accordion-toggle")
+      .not(jQuery(this))
+      .removeClass("active-tab")
+      .find(".menu-link")
+      .removeClass("active");
+  });
+}); // jQuery load</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlFkSbmt6nkBmEIbwQwMzL0dLVrz_MkaM&callback=myMap">
+
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+  </body>
+
+</html>

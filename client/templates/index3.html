@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+</head>
+
+  <body>
+  {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        {% endfor %}
+        {% endif %}
+    </ul> 
+  <nav class="navbar-inverse">
+  <div class="topheader">
+       <div class="topheaderleft">
+
+        <div class="top-logo">
+
+       <div class="indexlogo-box ">
+                <div class="row">
+                  <img src="{% static "img/l4.png" %}" style="margin-left:70px;margin-top: 13px;">
+                    </div>
+
+        </div>
+        <div class="top-menu" style="margin-left:116px;" id="myNavbar">
+            <ul>
+              <li><a href="ride.html">Bitmuv</a></li>
+              <li><a href="drive.html">Muver</a></li>
+              <li><a href="">Cities</a></li>
+            </ul>
+        </div>
+
+        </div>
+        <div class="topheaderright">
+             <div class="top-menu myNavbar" id="myNavbar">
+            <ul>
+              <li><a href="">Help </a></li>
+              <li><a href="login">Sign In</a></li>
+              <li><a href="" class="whitebg">Become a Mover</a></li>
+              <!-- <li><a href="">Map</a></li> -->
+            </ul>
+            <div id="menu-wrapper">
+             <div id="hamburger-menu"><span></span><span></span><span></span></div>
+      <!-- hamburger-menu -->
+           </div>
+        </div>
+        </div>
+  </div>
+</div>
+</nav>
+  <!--Navigation bar-->
+<div id="menu-container">
+   <!-- menu-wrapper -->
+   <ul class="menu-list accordion" style="display: none;">
+      <li id="nav1" class="toggle accordion-toggle ">
+         <span class="icon-plus"></span>
+         <a class="menu-link" href="#">Ride</a>
+      </li>
+      <!-- accordion-toggle -->
+      <ul class="menu-submenu accordion-content">
+         <li><a class="head" href="#">Overview</a></li>
+         <li><a class="head" href="#">How it works</a></li>
+         <li><a class="head" href="#">Fare Estimator </a></li>
+         <li><a class="head" href="#">Safety </a></li>
+         <li><a class="head" href="#">Cities </a></li>
+         <li><a class="head" href="#">Airports </a></li>
+      </ul>
+      <!-- menu-submenu accordon-content-->
+      <li id="nav2" class="toggle accordion-toggle">
+         <span class="icon-plus"></span>
+         <a class="menu-link" href="#">Drive</a>
+      </li>
+      <!-- accordion-toggle -->
+      <ul class="menu-submenu accordion-content">
+         <li><a class="head" href="#">Overview</a></li>
+         <li><a class="head" href="#">Requirnements</a></li>
+         <li><a class="head" href="#">Driver App</a></li>
+         <li><a class="head" href="#">Vehicle Solution</a></li>
+         <li><a class="head" href="#">Safety</a></li>
+      </ul>
+      <!-- menu-submenu accordon-content-->
+           <li id="nav3" class="toggle accordion-toggle">
+         <span class="icon-plus"></span>
+         <a class="menu-link" href="#">Eats and More</a>
+      </li>
+      <!-- accordion-toggle -->
+      <ul class="menu-submenu accordion-content">
+         <li><a class="head" href="#">BitmuvEats</a></li>
+         <li><a class="head" href="#">Bitmuv for Business</a></li>
+         <li><a class="head" href="#">BitmuvRUSH </a></li>
+         <li><a class="head" href="#">Bitmuv Freight</a></li>
+      </ul>
+      <!-- menu-submenu accordon-content-->
+      <hr style="border: 0;border-top: 1px solid rgba(72, 147, 191, 0.2);margin: -7px 0;">
+      <ul class="menu-submenu ">
+       <li><a class="menu-link" href="#">NEW DELHI</a><li>
+      </ul>
+      <hr style="border: 0;border-top: 1px solid rgba(72, 147, 191, 0.2);margin: -7px 0;">
+      <ul class="menu-submenu ">
+       <li><a class="menu-link" href="#">ENGLISH</a><li></ul>
+     <hr style="border: 0;border-top: 1px solid rgba(72, 147, 191, 0.2);;margin: -7px 0;">
+     <ul class="menu-submenu ">
+      <li><a class="menu-link" href="#">FOLLOW US</a><li></ul>
+   </ul>
+      <!-- menu-list accordion-->
+</div>
+  <!--   -->
+
+    <!--<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Bitmuv</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Ride</a></li>
+          <li><a href="#">Driver</a></li>
+          <li><a href="#">Cities</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#" data-target="#login" data-toggle="modal">Signin</a></li>
+          <li><a href="#" data-target="#login" data-toggle="modal">BECOME A Driver</a></li>
+
+        </ul>
+        </div>
+
+      </div>
+    </nav> -->
+    <!--banner-->
+    <div class="container">
+        <div class="row">
+        <div class="header-section "><br><br>
+            <h2 style="color:#68b8e0">Need something moved?</h2>
+            <h2>Use Bitmuv to move your items</h2>
+            <hr class="">
+          </div>
+          </div>
+          </div>
+
+    <!--banner-->
+
+
+
+   <div class="banner">
+      <div class="bg-color">
+        <div class="container">
+          <div class="row">
+          <!--start drive with Bitmuv-->
+              <!-- <div class="index-sigupbox">
+                          <div class="row">
+                      <div class="col-xs-12">
+                       <h4><a href="" style="color:#fff">Start drive with Bitmuv</a></h4>
+
+                       <h4 style="margin-left:47px;margin-top:100px; font-size:20px;"><a href="" style="color:#fff">SIGN UP &#8680;</a></h4>
+
+                       </div>
+                  </div>
+                     </div> -->
+
+                     <style type="text/css">
+                       .sh_code {
+    position: absolute;
+    right: 0px;
+    top: 58px;
+    background: #f8f8f9;
+    padding: 8px 100px;
+    width: 425px;
+    text-align: center;}
+    .form-group1 {
+    position: absolute;
+    right: 7px;
+    top: -88px !important;
+    background: #f8f8f9;
+    padding: 20px 30px;
+    width: 425px;
+    text-align: center;
+  }
+    .sign_up_sh
+    {
+position: absolute;
+    right: 7px;
+    top: -202px;
+    background: #f8f8f9;
+    padding: 8px 30px;
+    width: 425px;
+    text-align: center;
+    }
+    .all_form_tab
+    {
+      position: relative;
+    }
+
+                     </style>
+
+<!---mycode---->
+<div class="all_form_tab">
+<div class="sign_up_sh">
+<h3>Sign Up Below</h3>
+
+  <ul class="nav nav-tabs sh_code">
+    <li class="active"><a data-toggle="tab" href="#home">Customer</a></li>
+    <li><a data-toggle="tab" href="#menu1">Mover</a></li>
+  </ul>
+
+</div>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <div class="form-group1">
+        <div id="customer">
+          <form name="" id="customerFormMover" method="POST" action="/customer/registration">
+              {{ customer_registration_form.as_p }}
+              {% csrf_token %}
+              <div class="form-group has-feedback" style="margin-bottom: 0px">
+                <input type="text" id="email" class="form-control" name="email" value="{{email}}" placeholder="E-mail address" />
+              </div><br>
+              <div class="form-group has-feedback" style="margin-bottom: 0px">
+                  <input type="text" id="name" class="form-control" name="name" value="{{ name }}" placeholder="Name" />
+              </div>
+              <div class="form-group has-feedback" style="margin-bottom: 0px">
+                  <input type="text" id="mobile" class="form-control" name="mobile" value="{{ mobile }}" placeholder="Mobile" />
+              </div>
+               <div class="form-group has-feedback">
+                  <input type="text" id="city" class="form-control" name="city" value="{{ city }}" placeholder="City" />
+              </div>
+              <div class="form-group has-feedback" >
+                  <input type="text" id="password" class="form-control" name="password" value="{{ password }}" placeholder="Confirm Password" type="password"/>
+              </div>
+              <div class="form-group has-feedback" >
+                  <input type="text" id="confirm_password" class="form-control" name="confirm_password" value="{{ confirm_password }}" placeholder="Confirm Password" type="password"/>
+              </div>
+               <div class="form-group has-feedback">
+                  <input type="text" id="invite_code" class="form-control" name="invite_code" value="{{ invite_code }}" placeholder="Invite Code" />
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                    <button type="submit" id="submit_customer" name="submit" class="form contact-form-button light-form-button oswald light" style="width:85%">SIGN UP TO USE Bitmuv</button>
+                </div>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <div class="form-group1">
+        <div id="mover">
+          <form name="" id="ragistrationFormMover" method="POST" action="/mover/registration">
+              {{ mover_registration_form.as_p }}
+              {% csrf_token %}
+              <div class="form-group has-feedback" style="margin-bottom: 0px">
+                <input type="text" id="email_m" class="form-control" name="email_m" value="{{email_m}}" placeholder="E-mail address" />
+              </div><br>
+              <div class="form-group has-feedback" style="margin-bottom: 0px">
+                  <input type="text" id="name_m" class="form-control" name="name_m" value="{{ name_m }}" placeholder="Name" />
+              </div>
+              <div class="form-group has-feedback" style="margin-bottom: 0px">
+                  <input type="text" id="mobile_m" class="form-control" name="mobile_m" value="{{ mobile_m }}" placeholder="Mobile" />
+              </div>
+               <div class="form-group has-feedback">
+                  <input type="text" id="city_m" class="form-control" name="city_m" value="{{ city_m }}" placeholder="City" />
+              </div>
+              <div class="form-group has-feedback" >
+                  <input type="text" id="password_m" class="form-control" name="password_m" value="{{ password_m }}" placeholder="Confirm Password" type="password"/>
+              </div>
+              <div class="form-group has-feedback" >
+                  <input type="text" id="confirm_password_m" class="form-control" name="confirm_password_m" value="{{ confirm_password_m }}" placeholder="Confirm Password" type="password"/>
+              </div>
+              <div class="form-group has-feedback">
+                  <input type="text" id="licence_m" class="form-control" name="licence_m" value="{{ licence_m }}" placeholder="License" />
+              </div>
+              <div class="form-group has-feedback">
+                  <input type="text" id="vehicle_number_m" class="form-control" name="vehicle_number_m" value="{{ vehicle_number_m }}" placeholder="Vehicle" />
+              </div>
+              <div class="form-group has-feedback">
+                  <input type="text" id="address_m" class="form-control" name="address_m" value="{{ address_m }}" placeholder="Billing Address" />
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                    <button type="submit" id="submit_mover" name="submit" class="form contact-form-button light-form-button oswald light" style="width:85%">SIGN UP TO USE Bitmuv</button>
+                </div>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+               
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--/ Navigation bar-->
+   <section id="faculity-member" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+
+            <hr class="bottom-line">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="pm-staff-profile-container">
+              <div class="pm-staff-profile-image-wrapper text-center">
+                <div class="pm-staff-profile-image">
+                  <img src="{% static "img/a3.jpg" %}" alt="" class="img-circle">
+                </div>
+              </div>
+
+              <div class="pm-staff-profile-details">
+                <p class="pm-staff-profile-name">Easiest way to move items</p>
+                <p class="pm-staff-profile-bio">Register with Bitmuv. Enter your pick-up address and describe your products to be moved.  Select a Bitmuver and sit back and relax. </p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="pm-staff-profile-container">
+              <div class="pm-staff-profile-image-wrapper text-center">
+                <div class="pm-staff-profile-image">
+                  <img src="{% static "img/a1.jpg" %}" alt="" class="img-circle">
+                </div>
+              </div>
+              <div class="pm-staff-profile-details ">
+                <p class="pm-staff-profile-name">Anywhere, anytime </p>
+
+                <p class="pm-staff-profile-bio">Need to move funiture. Need rental equipment delivered to your home. Forgot something at home. Use Bitmuv. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="pm-staff-profile-container">
+              <div class="pm-staff-profile-image-wrapper text-center">
+                <div class="pm-staff-profile-image">
+                    <img src="{% static "img/a2.jpg" %}" alt="" class="img-circle">
+                </div>
+              </div>
+              <div class="pm-staff-profile-details ">
+                <p class="pm-staff-profile-name">Inexpensive & convenient</p>
+                <p class="pm-staff-profile-bio">Excellent service with great rates. Available when you need help. Use Bitmuv to handle your deliveries.</p>
+
+              </div>
+
+            </div>
+
+          </div>
+          <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light text-left">Resion to Ride</button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- second section-->
+    <section>
+<div class="banner1">
+      <div class="bg-color">
+        <div class="container">
+          <div class="row">
+           <div class="form-group4">
+                <form name="" id="loginForm" >
+
+                    <div class="row">
+                      <div class="col-xs-12" >
+                      <h2 style="color:#5bc0de"><span>Our</span></h2>
+                       <h2 style="color:#5bc0de">Bitmuvers</h2>
+                      <p>Our movers include people of different backgrounds, experiences and interests. They are passionate about what they do.
+                      </p>
+                      <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light" style="width:50%">READ STORIES</button>
+                      </div>
+
+
+                  </div>
+                </form>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+    <!-- third section-->
+   <section id="organisations" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+          <div class="row">
+          <h3 style="color:#5bc0de;font-size: 35px">Pricing</h2>
+          <h2>Get a fare estimate</h2>
+          </div>
+           <div class="form-group" style="width:70%">
+                <form name="" id="loginForm">
+                 <div class="form-group has-feedback">
+                 <img src="{% static "img/1.jpg" %}" height="46px" style="margin-bottom: 5px;"><input  placeholder="Enter Pickup Location"  id="loginid" type="text"  />
+
+
+                  </div>
+                  <div class="form-group has-feedback">
+                     <img src="{% static "img/2.jpg" %}" style="margin-bottom: 5px;"><input  placeholder="Enter Destination" id="loginpsw" type="text" />
+
+
+                  </div>
+                  <div class="row">
+                      <div class="col-xs-6">
+                          <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light" style="width:155%;margin-left:40px  ">Get info</button>
+                      </div>
+                  </div>
+                </form>
+              </div>
+
+
+          </div>
+          <div class="col-md-7">
+            <div class="detail-info">
+              <div id="googleMap" style="width:100%;height:400px; "></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <section>
+      <div class="banner2">
+      <div class="bg-color">
+        <div class="container">
+          <div class="row">
+          <div class="form-group2">
+                <form name="" id="loginForm" >
+                <h2><span>Work when You want</span></h2>
+                <h2>Earn $$$ When You Want</h2>
+                    <div class="row">
+                      <div class="col-xs-6" >
+                      <p> Working as a Bitmuver is flexible and rewarding. We help movers meet their career and financial goals.
+                      </p>
+
+                      </div><br>
+
+                      <div class="col-xs-6">
+                          <button type="submit" id="submit" name="submit" class="mid-btn-top-left">REASON TO DRIVE</button>
+                      </div>
+                  </div>
+                </form>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+   <!---->
+
+
+   <section id="organisations" class="section-padding" style="background-color: rgba(241, 241, 241, 0.69);">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+          <div class="box-slide-card">
+          <div class="row">
+            <div class="meet-our-device">
+          <h3 style="color:#27ACE2 ">At the wheel</h3>
+          <h2>Meet our drivers</h2>
+          </div>
+          </div>
+        <div class="w3-content">
+
+        <div class="div-bottom-slider-sift">
+      <div class="mySlides">
+     <div class="container">
+        <div class="row" >
+        <div class="div-bottom-slider-min">
+            <div class="col-sm-6 col-md-4 col-lg-3 mt-4" style="width:29%">
+                <div class="card">
+                    <img class="card-img-top" src="{% static "img/Driver-1.png" %}">
+                    <div class="card-block">
+
+
+                        <div class="card-text">
+                            "I started driving with Bitmuv because I liked the idea that my own car could make me money. After just about a couple weeks, I saw that this was something I wanted to do permanently."
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="float-right">Brandon</span>
+                        <span><i class=""></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mt-4" style="width:29%">
+                <div class="card">
+                    <img class="card-img-top" src="{% static "img/Driver-2.png" %}">
+                    <div class="card-block">
+                        <div class="card-text">
+                           "I wanted something where I could meet new people and get out of the house. Bitmuv has helped with both of those things, plus I’m seeing new parts of the city I’ve never seen before!"
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="float-right">Michal</span>
+                        <span><i class=""></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mt-4" style="width:29%">
+                <div class="card">
+                    <img class="card-img-top" src="{% static "img/Driver-3.png" %}">
+                    <div class="card-block">
+
+                        <div class="card-text">
+                            "Bitmuv enables me to have the creative freedom for baking my cakes and also driving on the side so I can make more money and also have my dream job."
+                        </div><br>
+                    </div>
+                    <div class="card-footer">
+                        <span class="float-right">Jenny</span>
+                        <span><i class=""></i></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+</div>
+  </div>
+  <div class="mySlides">
+  <div class="container">
+        <div class="row">
+         <div class="div-bottom-slider-min">
+        <div class="col-sm-6 col-md-4 col-lg-3 mt-4" style="width:29%">
+                <div class="card">
+                    <img class="card-img-top" src="{% static "img/Driver-1.png" %}">
+                    <div class="card-block">
+                        <div class="card-text">
+                           "I wanted something where I could meet new people and get out of the house. Bitmuv has helped with both of those things, plus I’m seeing new parts of the city I’ve never seen before!"
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="float-right">Michal</span>
+                        <span><i class=""></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mt-4" style="width:29%">
+                <div class="card">
+                    <img class="card-img-top" src="{% static "img/Driver-2.png" %}">
+                    <div class="card-block">
+
+                        <div class="card-text">
+                            "Bitmuv enables me to have the creative freedom for baking my cakes and also driving on the side so I can make more money and also have my dream job."
+                        </div><br>
+                    </div>
+                    <div class="card-footer">
+                        <span class="float-right">Jenny</span>
+                        <span><i class=""></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mt-4" style="width:29%">
+                <div class="card">
+                    <img class="card-img-top" src="img/Driver-1.png">
+                    <div class="card-block">
+
+                        <div class="card-text">
+                           "With Bitmuv, I’m able to realize my goals. I’m able to pursue my dreams. I’m able to stay focused on sharing amazing musical experiences with the world."
+                        </div><br>
+                    </div>
+                    <div class="card-footer">
+                        <span class="float-right">Sean</span>
+                        <span><i class=""></i></span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+</div>
+</div>
+  </div>
+  </div>
+  <div class="w3-row-padding w3-section" style="text-align: center;">
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+  </div>
+</div>
+</div>
+</div>
+
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+
+    <section>
+      <div class="banner3">
+      <div class="bg-color">
+        <div class="container">
+          <div class="row">
+          <div class="form-group3">
+
+
+                    <div class="row">
+                      <div class="col-xs-8" >
+                      <h3><span>The new app</span></h3>
+                      <h2>Gets Your there there faster</h2>
+                      <p> The update new Bitmuv app is rooling out now to cities around the world.And it's filled with new features that make getting where we want to go faster and easier.
+                      </p>
+
+                      </div>
+
+                      <div class="col-xs-4">
+                      <div class="row">
+                      <div class="div-bottom-for-vews">
+                          <button type="submit" id="submit" name="submit" class="mid-btn-top-right" >SEE WHAT'S NEW</button>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+  <!--safe and mordern cities-->
+  <section id="organisations" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+          <div class="row">
+          <h2 style="color:#5bc0de">Now arriving</h2>
+          <h2>Safe and modern cities</h2>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   <section id="organisations" class="section-padding">
+      <div class="container">
+       <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-2">
+              <div class="row">
+                <img src="{% static "img/3.jpg" %}" style="margin-top: 30px" >
+             </div>
+           </div>
+          <div class="col-md-3">
+             <div class="row">
+             <h3>Helping cities thrive</h3>
+          <p>A city with Bitmuv give people more ways to make money, hasfever drunk drivers on the road, and provides transporation anywhere,anytime </p>
+
+          </div>
+          <div class="row">
+            <div class="div-bottom-for-keep">
+          <button type="submit" id="submit" name="submit" class="mid-btn-right" >SEE THE IMPACT</button>
+           </div>
+           </div>
+          </div>
+          <div class="col-md-1">
+              <div class="row">
+               <hr style="height:200px; width:2px;background:#DCDCDC">
+             </div>
+           </div>
+
+          <div class="col-md-2">
+             <div class="row">
+               <img src="{% static "img/4.jpg" %}" style="margin-top: 30px">
+             </div>
+          </div>
+          <div class="col-md-3">
+             <div class="row">
+               <h3>Safe rides for everyone</h3>
+               <p>Whether riding and the backseat or driving up front,every part of the Bitmuv experiece is designed around your safety and security</p>
+
+             </div>
+              <div class="row">
+              <div class="div-bottom-for-keep">
+          <button type="submit" id="submit" name="submit" class="mid-btn-left">HOW WE KEEP YOU SAFE</button>
+          </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---->
+
+
+    <!-- footer-->
+     <section id="footersection" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <div class="row">
+                 <div class="col-md-4">
+                   <h3 style="color:#fff">Bitmuv</h3>
+                  </div>
+                  <div class="col-md-4">
+                  <button type="submit" id="submit" name="submit" class="foot-btn-rid">SIGN UP TO RIDE</button>
+                  </div>
+                  <div class="col-md-4">
+                  <div class="">
+                <button type="submit" id="submit" name="submit" class=" foot-btn-drive">BECOME A DRIVER</button>
+                </div>
+                </div>
+             </div>
+           </div>
+          <div class="col-md-12">
+             <div class="row">
+            <hr style="border-top: 1px solid rgba(124, 126, 125, 0.52)">
+          </div>
+          </div>
+         <div class="col-md-12">
+              <div class="row linkshow">
+                 <div class="col-md-4 ">
+                 <div clss="foot-menu">
+                 <ul>
+                    <li><img src="{% static "img/mp1.jpg" %}"> <a href="#">Enter Your Location</a></li>
+                    <li><img src="{% static "img/mp2.jpg" %}"> <a href="#">English</a></li>
+                    <li><img src="{% static "img/mp3.jpg" %}"> <a href="#">Help</a></li>
+                 </ul>
+                 <p style="padding: 10px;margin-top: 230px;margin-left: 30px; ">
+                    <a href="" style="padding: 3px "> <img src="{% static "img/f1.jpg" %}""></a>
+                    <a href="" style="padding: 3px "><img src="{% static "img/t1.jpg" %}"></a>
+                    <a href="" style="padding: 3px "><img src="{% static "img/i.jpg" %}"></a>
+                    <a href="" style="padding: 3px "><img src="{% static "img/c.jpg" %}"></a>
+                 </p>
+                 </div>
+                  </div>
+                  <div class="col-md-4">
+                  <ul>
+                  <li><a href="#">Ride</a></li>
+                  <li><a href="#">Drive</a></li>
+                  <li><a href="#">Cities</a></li>
+                  <li><a href="#">Fare Estimate</a></li>
+                  <li><a href="#">Deliver</a></li>
+                  <li><a href="#">Food</a></li>
+                  <li><a href="#">Business Travel</a></li>
+                  <li><a href="#">How it Works</a></li>
+                  <li><a href="#">Airports</a></li>
+                  <li><a href="#">Countries</a></li>
+                  </ul>
+                  </div>
+                  <div class="col-md-4">
+                  <ul>
+                  <li><a href="#">Safety</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Helping Cities</a></li>
+                  <li><a href="#">Our Story</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Newsroom</a></li>
+                  <li><a href="#">Media</a></li>
+                  <li><a href="#">Uber API</a></li>
+                  <li><a href="#">Gift Cards</a></li>
+                  <li><a href="#">Driving job</a></li>
+                  <ul>
+             </div>
+           </div>
+
+              <div class="col-md-12">
+                 <div class="row">
+                    <hr style="border-top: 1px solid rgba(124, 126, 125, 0.52)">
+              </div>
+             </div>
+             <div class="col-md-12">
+                 <div class="row linkshow">
+                    <div class="col-md-4">
+
+                    <ul>
+                      <li><a href="#">Top Cities</a></li>
+                      <li><a href="#">Top Countries</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-8">
+                 <p>
+                     <a href="#">San Francisco</a>
+                     <a href="#">London</a>
+                      <a href="#">Los Angeles</a>
+                      <a href="#">Washington D.C</a>
+                      <a href="#">Mexico City</a>
+                      <a href="#">Sao Paulo</a>
+                      <a href="#">USA</a>
+                      <a href="#">France</a>
+                      <a href="#">India</a>
+                      <a href="#">Spain</a>
+                      <a href="#">Mexico</a>
+                      <a href="#">Russia</a>
+
+                   </p>
+                    </div>
+              </div>
+             </div>
+             <div class="col-md-12">
+                 <div class="row">
+                    <hr style="border-top: 1px solid rgba(124, 126, 125, 0.52)">
+              </div>
+             </div>
+             <div class="col-md-12">
+                 <div class="row">
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-8">
+                    <p><a href=""><img src="{% static "img/play.svg" %}" style="width: 20%;
+    height: 11%;"></a>
+                   <a href=""> <img src="{% static "img/google.png" %}" style="width: 20%;
+    height: 11%;"><a href="">
+   <a href=""> <img src="{% static "img/micro.png" %}" style="width: 20%;
+    height: 11%;"></a>
+
+                  </p>
+                    </div>
+              </div>
+             </div>
+             <div class="col-md-12">
+                 <div class="row">
+                    <hr style="border-top: 1px solid rgba(124, 126, 125, 0.52)">
+              </div>
+             </div>
+             <div class="col-md-12">
+                 <div class="row">
+                    <div class="row linkshow">
+                    <div class="col-md-4">
+                    <ul>
+                      <li><a href="#">&copy;2017 Bitmuv Technologies Inc.</a></li>
+                     </ul>
+                    </div>
+                    <div class="col-md-4">
+                    <ul>
+                      <li><a href="#">Privacy</a></li>
+                      <li><a href="#">Accessibility</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4">
+                    <ul>
+                    <li><a href="#">Terms</a></li>
+                     </ul>
+                    </div>
+              </div>
+             </div>
+        </div>
+      </div>
+    </section>
+    <!--footer-->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script>
+     function changeType() {
+            if($("#registrationType").val()=='mover'){
+                document.getElementById("ragistrationform").action = "/mover/registration";
+            }
+            else{
+                document.getElementById("ragistrationform").action = "/customer/registration";
+            }   
+        }
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:15,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script type="text/javascript">
+  $(function() {
+  function slideMenu() {
+    var activeState = $("#menu-container .menu-list").hasClass("active");
+    $("#menu-container .menu-list").animate(
+      {
+        left: activeState ? "67%" : "67%"
+
+      },
+      600
+    );
+  }
+  $("#menu-wrapper").click(function(event) {
+    event.stopPropagation();
+   $("#hamburger-menu").toggleClass("open");
+    $("#menu-container .menu-list").slideToggle("slow");
+    slideMenu();
+
+    $("body").toggleClass("overflow-hidden");
+  });
+
+  $(".menu-list").find(".accordion-toggle").click(function() {
+    $(this).next().toggleClass("open").slideToggle("fast");
+    $(this).toggleClass("active-tab").find(".menu-link").toggleClass("active");
+
+    $(".menu-list .accordion-content")
+      .not($(this).next())
+      .slideUp("fast")
+      .removeClass("open");
+    $(".menu-list .accordion-toggle")
+      .not(jQuery(this))
+      .removeClass("active-tab")
+      .find(".menu-link")
+      .removeClass("active");
+  });
+}); // jQuery load</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlFkSbmt6nkBmEIbwQwMzL0dLVrz_MkaM&callback=myMap">
+
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+  </body>
+
+</html>

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block contents %}
+<div>
+  <form name="" id="customerFormMover" method="POST" action="/customer/update">
+    {% csrf_token %}
+    <div class="form-group has-feedback" style="margin-bottom: 0px">
+      <input type="text" id="email" class="form-control" name="email" value="{{email}}" placeholder="E-mail address" />
+    </div><br>
+    <div class="form-group has-feedback" style="margin-bottom: 0px">
+        <input type="text" id="name" class="form-control" name="name" value="{{ name }}" placeholder="Name" />
+    </div>
+    <div class="form-group has-feedback" style="margin-bottom: 0px">
+        <input type="text" id="mobile" class="form-control" name="mobile" value="{{ mobile }}" placeholder="Mobile" />
+    </div>
+     <div class="form-group has-feedback">
+        <input type="text" id="city" class="form-control" name="city" value="{{ city }}" placeholder="City" />
+    </div>
+    <div class="form-group has-feedback" >
+        <input type="text" id="password" class="form-control" name="password" value="{{ password }}" placeholder="Confirm Password" />
+    </div>
+    <div class="form-group has-feedback" >
+        <input type="text" id="confirm_password" class="form-control" name="confirm_password" value="{{ confirm_password }}" placeholder="Confirm Password" />
+    </div>
+     <div class="form-group has-feedback">
+        <input type="text" id="invite_code" class="form-control" name="invite_code" value="{{ invite_code }}" placeholder="Invite Code" />
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+          <button type="submit" id="submit_customer" name="submit" class="form contact-form-button light-form-button oswald light" style="width:85%">SIGN UP TO USE Bitmuv</button>
+      </div>
+    </div>
+</form>
+</div>
+{% endblock %}
