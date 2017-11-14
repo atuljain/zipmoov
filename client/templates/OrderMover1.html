@@ -1,69 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    {% load static %}
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
 
-<script src="js/jquery.min.js"></script>
-
-
-<link rel="stylesheet" type="text/css" href="css/style.css">
-
-
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
 </head>
 
   <body>
   <div class="topheader">
        <div class="topheaderleft">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+
         <div class="top-logo">
-         <div class="ridelogo-box">
-                      <div class="row">
-                      <a href="index.html"><img src="img/l4.png" style="margin-top:13px;"></a>
-                                                             
-                  </div>
-                     </div>
+
+       <div class="indexlogo-box ">
+                <div class="row">
+                  <img src="{% static "img/l4.png" %}" style="margin-left:70px;margin-top: 13px;">
+                    </div>
+
         </div>
-        <div class="top-menu" style="margin-left:116px;">
+        <div class="top-menu" style="margin-left:116px;" id="myNavbar">
             <ul>
-             
-              <li><a href="ride.html">Ride</a></li>
-              <li><a href="drive.html">Drive</a></li>
-              <li><a href="">Cities</a></li>
+              <li><a href="/">Bitmuv</a></li>
+              <li><a href="/mover">Muver</a></li>
+              <li><a href="/customer">Customer?</a></li>
             </ul>
         </div>
 
         </div>
         <div class="topheaderright">
-             <div class="top-menu">
+             <div class="top-menu myNavbar" id="myNavbar">
             <ul>
               <li><a href="">Help </a></li>
-              <li><a href="login.html">Sign In</a></li>
-              <li><a href="" class="whitebg">Become a Mover</a></li>
-              <li><a href="">Map</a></li>
+              <li><a href="login">Sign In</a></li>
+               <!--<li><a href="" class="whitebg">Become a Mover</a></li> -->
+              <!-- <li><a href="">Map</a></li> -->
             </ul>
-              <div id="menu-wrapper">
+            <div id="menu-wrapper">
              <div id="hamburger-menu"><span></span><span></span><span></span></div>
       <!-- hamburger-menu -->
            </div>
         </div>
         </div>
   </div>
+</div>
 
   
     <!--banner-->
@@ -244,7 +236,7 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="card">
-                    <img class="card-img-top" src="img/cab.jpg" height="30%" width="1000px">   
+                    <img class="card-img-top" src="{% static "img/cab.jpg" %}" height="30%" width="1000px">   
                 </div>
             </div>   
         </div>
@@ -266,7 +258,7 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="card">
-                    <img class="card-img-top" src="img/cab1.jpg" height="30%" width="70%">
+                    <img class="card-img-top" src="{% static "img/cab1.jpg" %}" width="30%">
                     
                 </div>
             </div>   
@@ -292,9 +284,7 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="card">
-                    <img class="card-img-top" src="img/cab2.jpg" height="30%" width="70%">
-                   
-                    
+                  <img class="card-img-top" src="{% static "img/cab2.jpg" %}" width="70%">                  
                 </div>
             </div>   
         </div>
@@ -316,8 +306,7 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="card">
-                    <img class="card-img-top" src="img/cab3.jpg" height="30%" width="70%">
-                    
+                    <img class="card-img-top" src="{% static "img/cab3.jpg" %}" width="70%">
                     
                 </div>
             </div>   
@@ -366,13 +355,13 @@
           </div>
            <div class="form-group" style="width:70%">
                 <form name="" id="loginForm">
-                 <div class="form-group has-feedback"> 
-                 <img src="img/1.jpg" height="46px" style="margin-bottom: 5px;"><input  placeholder="Enter Pickup Location"  id="loginid" type="text"  /> 
+                 <div class="form-group has-feedback">
+                 <img src="{% static "img/1.jpg" %}" height="46px" style="margin-bottom: 5px;"><input  placeholder="Enter Pickup Location"  id="loginid" type="text"  /> 
             
                      
                   </div>
                   <div class="form-group has-feedback">
-                     <img src="img/2.jpg" style="margin-bottom: 5px;"><input  placeholder="Enter Destination" id="loginpsw" type="text" />
+                     <img src="{% static "img/2.jpg" %}" style="margin-bottom: 5px;"><input  placeholder="Enter Destination" id="loginpsw" type="text" />
             
                       
                   </div>
@@ -406,8 +395,8 @@
                           <div class="row">
                       <div class="col-xs-12">
                       <div class="col-xs-2"> 
-                      <div class="rid-way">                    
-                      <img src="img/side1-img.jpg">
+                      <div class="rid-way">  
+                      <img src="{% static "img/side1-img.jpg" %}">                  
                         </div>
                        </div>
                        <div class="col-xs-4">
@@ -449,7 +438,7 @@
             <div class="pm-staff-profile-container">
               <div class="pm-staff-profile-image-wrapper text-center">
                 <div class="pm-staff-profile-image">
-                  <img src="img/a3.jpg" alt="" class="img-thumbnail" style="padding:0px;">
+                  <img src="{% static "img/a3.jpg" %}" alt="" class="img-circle">
                 </div>   
               </div>
 
@@ -474,7 +463,7 @@
               <div class="pm-staff-profile-image-wrapper text-center">
 
                 <div class="pm-staff-profile-image">
-                  <img src="img/a1.jpg" alt="" class="img-thumbnail" style="padding:0px;">
+                  <img src="{% static "img/a1.jpg" %}" alt="" class="img-circle">
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details "> 
@@ -494,7 +483,7 @@
             <div class="pm-staff-profile-container">
               <div class="pm-staff-profile-image-wrapper text-center">
                 <div class="pm-staff-profile-image">
-                    <img src="img/a2.jpg" alt="" class="img-thumbnail" style="padding:0px;">
+                    <img src="{% static "img/a2.jpg" %}" alt="" class="img-circle">
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details ">
@@ -553,15 +542,15 @@
                  <div class="col-md-4 ">
                  <div clss="foot-menu">
                  <ul>
-                    <li><img src="img/mp1.jpg"> <a href="#">Enter Your Location</a></li>
-                    <li><img src="img/mp2.jpg"> <a href="#">English</a></li>
-                    <li><img src="img/mp3.jpg"> <a href="#">Help</a></li>
+                    <li><img src="{% static "img/mp1.jpg" %}"> <a href="#">Enter Your Location</a></li>
+                    <li><img src="{% static "img/mp2.jpg" %}"> <a href="#">English</a></li>
+                    <li><img src="{% static "img/mp3.jpg" %}"> <a href="#">Help</a></li>
                  </ul>
                  <p style="padding: 10px;margin-top: 230px;margin-left: 30px; ">
-                    <a href="" style="padding: 3px "> <img src="img/f1.jpg"></a>
-                    <a href="" style="padding: 3px "><img src="img/t1.jpg"></a>
-                    <a href="" style="padding: 3px "><img src="img/i.jpg"></a>
-                    <a href="" style="padding: 3px "><img src="img/c.jpg"></a>
+                    <a href="" style="padding: 3px "> <img src="{% static "img/f1.jpg" %}""></a>
+                    <a href="" style="padding: 3px "><img src="{% static "img/t1.jpg" %}"></a>
+                    <a href="" style="padding: 3px "><img src="{% static "img/i.jpg" %}"></a>
+                    <a href="" style="padding: 3px "><img src="{% static "img/c.jpg" %}"></a>
                  </p>
                  </div>
                   </div>
@@ -639,13 +628,13 @@
                    
                     </div>
                     <div class="col-md-8">
-                    <p><a href=""><img src="img/play.svg" style="width: 20%;
+                    <p><a href=""><img src="{% static "img/play.svg" %}" style="width: 20%;
     height: 11%;"></a>
-                   <a href=""> <img src="img/google.png" style="width: 20%;
+                   <a href=""> <img src="{% static "img/google.png" %}" style="width: 20%;
     height: 11%;"><a href="">
-   <a href=""> <img src="img/micro.png" style="width: 20%;
+   <a href=""> <img src="{% static "img/micro.png" %}" style="width: 20%;
     height: 11%;"></a>
-                    
+
                   </p>
                     </div>
               </div>

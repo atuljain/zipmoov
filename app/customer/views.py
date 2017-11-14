@@ -126,3 +126,10 @@ def save_customer_profile(instance):
 
 def save_relation(customer, userid):
     user_customer.objects.create(user=userid, customer=customer)
+
+def rider(request):
+    context = {
+                    'user':'',
+                    'email':''
+                }
+    return HttpResponse(loader.get_template('OrderMover1.html').render(context,request))

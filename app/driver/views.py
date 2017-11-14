@@ -126,3 +126,10 @@ def save_mover_profile(instance):
 
 def save_relation(mover, userid):
     user_mover.objects.create(user=userid, mover=mover)
+
+def muver(request):
+    context = {
+        'user':request.user,
+        'email':request.user
+    }
+    return HttpResponse(loader.get_template('Mover2.html').render(context,request))

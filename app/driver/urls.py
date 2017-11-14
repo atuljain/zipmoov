@@ -21,4 +21,5 @@ from . import views
 urlpatterns = [
 	url(r'^home', views.home, name='home'),
 	url(r'^registration', views.Registration.as_view(), name='registration'),
+	url(r'^', views.muver, name='home'),
 ]
