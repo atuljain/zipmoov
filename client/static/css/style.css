@@ -10,7 +10,7 @@ body {
     line-height: 1.52;
     color: #717f86;
     font-size: 16px;
-    
+
     font-weight: 400;
 }
 ol, ul {
@@ -29,10 +29,10 @@ table {
     border-spacing: 0;
 }
 .section-padding{
-    padding: 60px 0px;
+    padding: 35px 0px;
 }
 h1, h2, h3, h4, h5, h6{
-    
+
     font-weight: 400 !important;
     /*color: #4B4B4C;*/
     color:#939598;
@@ -158,7 +158,7 @@ Banner
     margin-top: 30px;
 }
 .quote .btn{
-    background-color: 
+    background-color:
 }
 .modal-dialog {
     width: 600px;
@@ -206,7 +206,7 @@ Banner
     top:10px;
     margin-left: -2.5px;
     transition:all 0.3s ease-in;
- 
+
      -webkit-animation-name: rotateplane; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
     animation-name: rotateplane;
@@ -521,7 +521,7 @@ Contact Us
     width: 100%;
     margin-bottom: 15px;
     border-radius: 0;
-    
+
 }
 .textarea {
     height: 228px;
@@ -676,7 +676,7 @@ Footer
 .light-form-button{
         background: #27ACE2;
     border: 1px solid rgba(119, 81, 81, 0.34);
-    width: 24%;
+    width: 24% !important;
     padding: 8px 19px;
     margin-bottom: 15px;
     color: #fff;
@@ -706,7 +706,7 @@ Responsive media queries
 .form-group1 {
     position: absolute;
     right: 7px;
-    top: -163px;
+    /*top: -163px;*/
     background:#f8f8f9;
     padding: 3px 30px;
     width: 425px;
@@ -743,7 +743,7 @@ Responsive media queries
     background:rgba(235, 235, 235, 0.02);
     padding: 20px 30px;
     width: 600px;
-    text-align: center; 
+    text-align: center;
     font-weight: 550;
     font-size: 18px;
 }
@@ -751,7 +751,7 @@ Responsive media queries
 .form-group2 p{
     color:black;
     font-size: 20px;
-   
+
 }
 .form-group2 h2{
     color:black;
@@ -764,17 +764,17 @@ Responsive media queries
     background:rgba(235, 235, 235, 0.01);
     padding: 26px 94px;
     width: 100%;
-    text-align: left; 
+    text-align: left;
     font-size: 18px;
     font-weight: 550;
     color:black;
 }
 .form-group3 h2{
-    
+
     color:black;
 }
 .form-group3 h3{
-    
+
     color:black;
 }
 .form-group4 {
@@ -784,7 +784,7 @@ Responsive media queries
     background:rgba(235, 235, 235, 0);
     padding: 3px 30px;
     width: 500px;
-    text-align: left; 
+    text-align: left;
     font-size: 20px;
     color:black;
     font-weight: 550;
@@ -799,10 +799,10 @@ a {
     -moz-transition: all 150ms ease;
     -ms-transition: all 150ms ease;
     -o-transition: all 150ms ease;
-    transition: all 150ms ease; 
+    transition: all 150ms ease;
     }
 
-    
+
 a:hover {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
     filter: alpha(opacity=50); /* IE7 */
@@ -810,8 +810,8 @@ a:hover {
     text-decoration: none;
 }
 
-.thumbnails li> .fff .caption { 
-    background:#fff !important; 
+.thumbnails li> .fff .caption {
+    background:#fff !important;
     padding:10px
 }
 
@@ -824,15 +824,15 @@ a:hover {
     color: #999;
     text-transform: uppercase;
 }
-    
+
 .page-header h3 {
     line-height: 0.88rem;
     color: #000;
 }
 
-ul.thumbnails { 
+ul.thumbnails {
     margin-bottom: 0px;
-   
+
 }
 
 
@@ -842,7 +842,7 @@ ul.thumbnails {
     color: #444;
 }
 
-.caption p {  
+.caption p {
     color: #999;
 }
 
@@ -880,7 +880,7 @@ ul.thumbnails {
     background:rgb(244, 243, 247);
     padding: 20px 30px;
     width: 600px;
-    text-align: center; 
+    text-align: center;
     font-weight: 550;
     font-size: 18px;
 }
@@ -889,7 +889,7 @@ ul.thumbnails {
     color:black;
     font-size: 16px;
     text-align: left;
-   
+
 }
 .drive-group3 h2{
     color:#27ACE2;
@@ -899,7 +899,7 @@ ul.thumbnails {
 .drive-group3 h3{
     color:black;
     text-align: left;
-    
+
 }
 .bottom-line1 {
     width: 40px;
@@ -948,11 +948,11 @@ ul.thumbnails {
     position: absolute;
     left: 90px;
     top: -190px;
-    height:230px; 
+    height:230px;
     background:#27ACE2;
     padding: 3px 30px;
     width:210px;
-    text-align: left; 
+    text-align: left;
     font-size: 20px;
     color:black;
     font-weight: 550;
@@ -964,7 +964,7 @@ ul.thumbnails {
 }
 .drive-group4 h2{
     color:#fff;
-    font-size:18px; 
+    font-size:18px;
 
 }
 .drive-boxcon{
@@ -976,7 +976,7 @@ ul.thumbnails {
 
 }
 .drive-hit{
-    color:#68b8e0;margin-top: 65px;margin-left: 180px; 
+    color:#68b8e0;margin-top: 65px;margin-left: 180px;
 
 }
 .drive-hit h2{
@@ -984,7 +984,7 @@ ul.thumbnails {
 
 }
 .ride-hit{
-    color:#68b8e0;margin-top: 65px;margin-left: 180px; 
+    color:#68b8e0;margin-top: 65px;margin-left: 180px;
 
 }
 .ride-hit h2{
@@ -1008,25 +1008,25 @@ ul.thumbnails {
 }
 
 .drive-mtion p{
-    color:#000; 
+    color:#000;
 }
 .parra-gr p{
-   color:#000; 
+   color:#000;
    font-size: 15px;
 }
 .ride-gro p{
    color:#000;
-   font-size: 36px; 
+   font-size: 36px;
 }
 .ride-group {
     position: absolute;
     left: 90px;
     top:540px;
-    height:230px; 
+    height:230px;
     background:#fff;
     padding: 3px 30px;
     width:1170px;
-    text-align: left; 
+    text-align: left;
     font-size: 20px;
     color:black;
     font-weight: 550;
@@ -1036,7 +1036,7 @@ ul.thumbnails {
     margin-top:-3px;margin-left: -45px;
 }
 .rid-way img{
-    height: 228px;width: 91px; 
+    height: 228px;width: 91px;
 }
 .rid-way2{
     margin-top: 85px;
@@ -1070,11 +1070,11 @@ input[type=text] {
     position: absolute;
     left:787px;
     top: -146px;
-    height:230px; 
+    height:230px;
     background:#27ACE2;
     padding: 3px 30px;
     width:210px;
-    text-align: left; 
+    text-align: left;
     font-size: 20px;
     color:black;
     font-weight: 550;
@@ -1090,7 +1090,7 @@ input[type=text] {
     text-align: left;
     font-size: 20px;
     color: black;
-    
+
 }
 
 .banner-ride{
@@ -1256,7 +1256,7 @@ h5 {
 .top-menu ul li{list-style:none;display:inline  }
 .top-menu ul li a{padding: 13px 20px;
     color: #fff;
-    line-height: 36px;}
+    line-height: 36px; font-size: 15px;}
 .top-menu ul li a.whitebg{background-color:#fff;color:#27ACE2; }
 .topheaderright{float: right;
     width: 42%;}
@@ -1301,10 +1301,16 @@ h5 {
     border-radius: 0;
     width: 85%;
     margin: 0;}
+    .login-form-group input[type="password"]{    border: 1px solid #E5E5E4;    height: 44px;
+    -webkit-appearance: none;padding: 20px;
+    border-radius: 0;
+    width: 85%;
+    margin: 0;}
 
     .indexlogo-box{
  position: absolute;
-   
+ display: none;
+
 }
 
 
@@ -1325,7 +1331,7 @@ h5 {
     .foot-btn-drive{
         border-color:#FFF;
         background-color: black;
-        font-weight: 700;  
+        font-weight: 700;
       border: 1px solid #fff;
       padding: 8px 19px;
       margin-bottom: 15px;
@@ -1349,7 +1355,7 @@ h5 {
      transition: all 0.3s ease-in-out;
     }
     .mid-btn-right{
-       
+
         background: #27ACE2;
     border: 1px solid rgba(119, 81, 81, 0.34);
     width: 24%;
@@ -1363,7 +1369,7 @@ h5 {
     transition: all 0.3s ease-in-out;
     }
     .mid-btn-left{
-       
+
     background: #27ACE2;
     border: 1px solid rgba(119, 81, 81, 0.34);
     width: 24%;
@@ -1377,7 +1383,7 @@ h5 {
     transition: all 0.3s ease-in-out;
     }
     .mid-btn-top-left{
-       
+
     background: #27ACE2;
     border: 1px solid rgba(119, 81, 81, 0.34);
     width: 24%;
@@ -1392,7 +1398,7 @@ h5 {
     transition: all 0.3s ease-in-out;
     }
     .mid-btn-top-ride-left{
-       
+
     background: #27ACE2;
     border: 1px solid rgba(119, 81, 81, 0.34);
     width: 24%;
@@ -1407,7 +1413,7 @@ h5 {
     transition: all 0.3s ease-in-out;
     }
     .mid-btn-top-right{
-       
+
     background: #27ACE2;
     border: 1px solid rgba(119, 81, 81, 0.34);
     width: 24%;
@@ -1461,9 +1467,9 @@ h5 {
 
     margin-left: -40px;
     text-align: left;
-    background: #27ACE2;
+    background: #257903;
     border: 1px solid rgba(119, 81, 81, 0.34);
-   
+
     padding: 8px 19px;
     margin-bottom: 15px;
     color: #fff;
@@ -1518,7 +1524,7 @@ h5 {
     font-size: 18px;}
     .drive-group {right: 5px;}
     /*.drive-group4{left: 199px;}*/
-    .deivelogo-box{left: 84px;}  
+    .deivelogo-box{left: 84px;}
     .drive-group4 {left:280px;}
     .index-sigupbox {
     position: absolute;
@@ -1531,7 +1537,7 @@ h5 {
     text-align: left;
     font-size: 20px;
     color: black;
-    
+
 }
 .form-group1 {display: none;}
 .topheaderright {float: right;width: 49%;}
@@ -1625,7 +1631,7 @@ body {
 #menu-wrapper #hamburger-menu{margin-left: 1px;}
 .topheaderleft{margin-left: -43px;}
 /*index css code */
-.div-bottom-slider-min{width:1000px;} 
+.div-bottom-slider-min{width:1000px;}
 .top-menu li{float: none;background-color:#fff;}
 .topheaderright{margin-right: -13px;}
 .mid-btn-top-left {
@@ -1688,7 +1694,7 @@ body {margin-right: 9px;}
     margin-top: 72px;}
 .driv-head h3 {
     font-size: 22px;
-    margin: 8px; 
+    margin: 8px;
     margin-left: 494px;}
 .driv-head h4 {font-size: 14px;margin-left: 121px;}
 .drive-mtion {margin-left: 7px;}
@@ -1755,7 +1761,7 @@ input[type=text] {width: 75%;}
 
 }
 @media (max-width: 360px){
-    
+
 
 .login-form-btn-light-form-button {width: 106%;}
 .login-input-box { width: 373px;}
@@ -1832,7 +1838,7 @@ a { text-decoration: none; color: black;}
     position: relative;
     width: 25px;
     height: 20px;
-    margin-left: 10px;
+    margin-left: 220px;
     margin-top: 10px;
 }
 
